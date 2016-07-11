@@ -1,0 +1,41 @@
+/* 
+  Localizable.strings
+  mRobotPro
+
+  Created by harvey on 16/7/11.
+  Copyright © 2016年 harvey. All rights reserved.
+*/
+
+"Bluetooth connection is broken" = "蓝牙连接中断";
+
+"reconnect" = "重新连接";
+
+"The device is connected , make sure it is switched" = "设备正在连接，确认切换吗";
+
+"Cancel" = "取消";
+
+"Confirm" = "确认";
+
+"Reset" = "重置";
+
+"Operation" = "操作方式";
+
+"Information" = "蓝牙信息";
+
+"Name" = "名称";
+
+"ID" = "ID";
+
+"American" = "美国手";
+
+"Japan" = "日本手";
+
+"Left" = "左手";
+
+"Right" = "右手";
+
+"mRobots requires Bluetooth" = "mRobots需要蓝牙";
+
+"Please enable Bluetooth to continue using this app" = "请启用蓝牙继续使用这个应用程序";
+
+

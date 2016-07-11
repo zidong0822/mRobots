@@ -1,0 +1,58 @@
+PODS:
+  - BetterSegmentedControl (0.3)
+  - BFPaperButton (2.0.29):
+    - UIColor+BFPaperColors
+  - FirebaseAnalytics (3.2.0):
+    - FirebaseInstanceID (~> 1.0)
+    - GoogleInterchangeUtilities (~> 1.2)
+    - GoogleSymbolUtilities (~> 1.1)
+    - GoogleUtilities (~> 1.3)
+  - FirebaseInstanceID (1.0.6)
+  - Google/Analytics (3.0.3):
+    - Google/Core
+    - GoogleAnalytics (~> 3.12)
+  - Google/Core (3.0.3):
+    - FirebaseAnalytics (~> 3.2)
+  - GoogleAnalytics (3.14.0)
+  - GoogleInterchangeUtilities (1.2.1):
+    - GoogleSymbolUtilities (~> 1.0)
+  - GoogleSymbolUtilities (1.1.1)
+  - GoogleUtilities (1.3.1):
+    - GoogleSymbolUtilities (~> 1.0)
+  - HanekeSwift (0.10.1)
+  - Hue (1.1)
+  - Localize-Swift (1.1.2)
+  - NBMaterialDialogIOS (0.2.2):
+    - BFPaperButton (~> 2.0.18)
+  - SnapKit (0.15.0)
+  - UIColor+BFPaperColors (1.7.2)
+
+DEPENDENCIES:
+  - BetterSegmentedControl
+  - Google/Analytics
+  - HanekeSwift
+  - Hue
+  - Localize-Swift (~> 1.1)
+  - NBMaterialDialogIOS (~> 0.2.2)
+  - SnapKit (~> 0.15.0)
+
+SPEC CHECKSUMS:
+  BetterSegmentedControl: d41b1785e2f0d3f823ce5017d0482440cc6aa584
+  BFPaperButton: 7df738f2e749a9a4edd3e043f0621ee02215e417
+  FirebaseAnalytics: 6f75b04e6bfb8e0b6e9ef298e04c24eea3b13863
+  FirebaseInstanceID: d014d574053a2fe84478f12f7bae96979e7051bb
+  Google: 813c467362eabc11385f5a5cc9ad0cb651a58f4e
+  GoogleAnalytics: 9be1afdb8deeac4bb5f13ca7f7d3b9db2a1f43dc
+  GoogleInterchangeUtilities: def8415a862effc67d549d5b5b0b9c7a2f97d4de
+  GoogleSymbolUtilities: 33117db1b5f290c6fbf259585e4885b4c84b98d7
+  GoogleUtilities: 56c5ac05b7aa5dc417a1bb85221a9516e04d7032
+  HanekeSwift: 08e47d3d0f2899ec58e5d257beba0de619aca9e8
+  Hue: ed6781be844b58b2a38150cfd4bf24c33449faf8
+  Localize-Swift: 584bcde9c6b13fcccb1333f398a46a0e60735e7a
+  NBMaterialDialogIOS: f7aa80ee3b6c609bc70bbb8f340ba017627bce55
+  SnapKit: 4962eed2ee18e48cbd2b2292fffc57efe7235f87
+  UIColor+BFPaperColors: 03101fe6c10ed00c6daae7c26553f1de41500853
+
+PODFILE CHECKSUM: dcaffc63d7370f80bb920dd2c8b2b13cb8a53ab0
+
+COCOAPODS: 1.0.1

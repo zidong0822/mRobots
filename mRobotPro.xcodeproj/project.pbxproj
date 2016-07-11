@@ -1,0 +1,773 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7E9BABC1E85ABF70E59DD3B2 /* Pods_mRobotPro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 027515959255C68D001B47E2 /* Pods_mRobotPro.framework */; };
+		B907568A1D2E379E0040AA46 /* DroneSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90756891D2E379E0040AA46 /* DroneSettingViewController.swift */; };
+		B9190AFF1D2A01FB0079F404 /* CBCharacteristic+LightBlue.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9190AF81D2A01FB0079F404 /* CBCharacteristic+LightBlue.swift */; };
+		B9190B001D2A01FB0079F404 /* CBService+LightBlue.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9190AF91D2A01FB0079F404 /* CBService+LightBlue.swift */; };
+		B9190B011D2A01FB0079F404 /* CBUUID+LightBlue.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9190AFA1D2A01FB0079F404 /* CBUUID+LightBlue.swift */; };
+		B9190B021D2A01FB0079F404 /* BluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9190AFB1D2A01FB0079F404 /* BluetoothManager.swift */; };
+		B9190B031D2A01FB0079F404 /* BluetoothDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9190AFC1D2A01FB0079F404 /* BluetoothDelegate.swift */; };
+		B9190B041D2A01FB0079F404 /* CBAdvertisementData+LightBlue.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9190AFD1D2A01FB0079F404 /* CBAdvertisementData+LightBlue.swift */; };
+		B9190B051D2A01FB0079F404 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9190AFE1D2A01FB0079F404 /* Constants.swift */; };
+		B9190B071D2A04550079F404 /* ConnectingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9190B061D2A04550079F404 /* ConnectingView.swift */; };
+		B9277B441D26467600EB9A11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9277B431D26467600EB9A11 /* AppDelegate.swift */; };
+		B9277B491D26467600EB9A11 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9277B471D26467600EB9A11 /* Main.storyboard */; };
+		B9277B4B1D26467600EB9A11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9277B4A1D26467600EB9A11 /* Assets.xcassets */; };
+		B9277B4E1D26467600EB9A11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9277B4C1D26467600EB9A11 /* LaunchScreen.storyboard */; };
+		B9277B591D26467600EB9A11 /* mRobotProTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9277B581D26467600EB9A11 /* mRobotProTests.swift */; };
+		B9277B641D26467600EB9A11 /* mRobotProUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9277B631D26467600EB9A11 /* mRobotProUITests.swift */; };
+		B9277B731D26469D00EB9A11 /* mJoyStick.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9277B721D26469D00EB9A11 /* mJoyStick.swift */; };
+		B9277B771D26562C00EB9A11 /* mAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9277B761D26562C00EB9A11 /* mAlertController.swift */; };
+		B9277B791D26577B00EB9A11 /* mTankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9277B781D26577B00EB9A11 /* mTankViewController.swift */; };
+		B9277B7B1D2657D700EB9A11 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9277B7A1D2657D700EB9A11 /* AppConfig.swift */; };
+		B9277B7D1D2659EA00EB9A11 /* mDroneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9277B7C1D2659EA00EB9A11 /* mDroneViewController.swift */; };
+		B94689741D2E6FBB001676D9 /* Haneke.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B94689731D2E6FBB001676D9 /* Haneke.framework */; };
+		B94689761D2F98B0001676D9 /* UnavailableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94689751D2F98B0001676D9 /* UnavailableView.swift */; };
+		B948458A1D2B51B7000C534F /* SelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94845891D2B51B7000C534F /* SelectViewController.swift */; };
+		B94845931D2B547D000C534F /* UINavigationController+WXSTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = B948458D1D2B547D000C534F /* UINavigationController+WXSTransition.m */; };
+		B94845941D2B547D000C534F /* UIViewController+WXSTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = B948458F1D2B547D000C534F /* UIViewController+WXSTransition.m */; };
+		B94845951D2B547D000C534F /* WXSTransitionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B94845911D2B547D000C534F /* WXSTransitionManager.m */; };
+		B948459E1D2BBEFA000C534F /* AlertUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = B948459D1D2BBEFA000C534F /* AlertUtil.swift */; };
+		B964E9381D2A087B00DC6331 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B964E9371D2A087B00DC6331 /* SettingViewController.swift */; };
+		B9D51DFB1D3376E7004C3CA2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B9D51DFD1D3376E7004C3CA2 /* Localizable.strings */; };
+		B9E8A9FE1D2E2ED000AE0566 /* ISScrollViewPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E8A9FD1D2E2ED000AE0566 /* ISScrollViewPage.swift */; };
+		B9E8AA001D2E304B00AE0566 /* TankSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E8A9FF1D2E304B00AE0566 /* TankSettingViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B9277B551D26467600EB9A11 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B9277B381D26467600EB9A11 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B9277B3F1D26467600EB9A11;
+			remoteInfo = mRobotPro;
+		};
+		B9277B601D26467600EB9A11 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B9277B381D26467600EB9A11 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B9277B3F1D26467600EB9A11;
+			remoteInfo = mRobotPro;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		027515959255C68D001B47E2 /* Pods_mRobotPro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mRobotPro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		968CBD2C6EE307AB68A0C3CA /* Pods-mRobotPro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mRobotPro.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mRobotPro/Pods-mRobotPro.debug.xcconfig"; sourceTree = "<group>"; };
+		B90756891D2E379E0040AA46 /* DroneSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DroneSettingViewController.swift; sourceTree = "<group>"; };
+		B9190AF51D2661B20079F404 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
+		B9190AF81D2A01FB0079F404 /* CBCharacteristic+LightBlue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CBCharacteristic+LightBlue.swift"; sourceTree = "<group>"; };
+		B9190AF91D2A01FB0079F404 /* CBService+LightBlue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CBService+LightBlue.swift"; sourceTree = "<group>"; };
+		B9190AFA1D2A01FB0079F404 /* CBUUID+LightBlue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CBUUID+LightBlue.swift"; sourceTree = "<group>"; };
+		B9190AFB1D2A01FB0079F404 /* BluetoothManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothManager.swift; sourceTree = "<group>"; };
+		B9190AFC1D2A01FB0079F404 /* BluetoothDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothDelegate.swift; sourceTree = "<group>"; };
+		B9190AFD1D2A01FB0079F404 /* CBAdvertisementData+LightBlue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CBAdvertisementData+LightBlue.swift"; sourceTree = "<group>"; };
+		B9190AFE1D2A01FB0079F404 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B9190B061D2A04550079F404 /* ConnectingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectingView.swift; sourceTree = "<group>"; };
+		B9277B401D26467600EB9A11 /* mRobotPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mRobotPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9277B431D26467600EB9A11 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B9277B481D26467600EB9A11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B9277B4A1D26467600EB9A11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B9277B4D1D26467600EB9A11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B9277B4F1D26467600EB9A11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9277B541D26467600EB9A11 /* mRobotProTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mRobotProTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9277B581D26467600EB9A11 /* mRobotProTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mRobotProTests.swift; sourceTree = "<group>"; };
+		B9277B5A1D26467600EB9A11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9277B5F1D26467600EB9A11 /* mRobotProUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mRobotProUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9277B631D26467600EB9A11 /* mRobotProUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mRobotProUITests.swift; sourceTree = "<group>"; };
+		B9277B651D26467600EB9A11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9277B721D26469D00EB9A11 /* mJoyStick.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mJoyStick.swift; sourceTree = "<group>"; };
+		B9277B761D26562C00EB9A11 /* mAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mAlertController.swift; sourceTree = "<group>"; };
+		B9277B781D26577B00EB9A11 /* mTankViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mTankViewController.swift; sourceTree = "<group>"; };
+		B9277B7A1D2657D700EB9A11 /* AppConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		B9277B7C1D2659EA00EB9A11 /* mDroneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mDroneViewController.swift; sourceTree = "<group>"; };
+		B94689731D2E6FBB001676D9 /* Haneke.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Haneke.framework; path = "../../../Library/Developer/Xcode/DerivedData/mRobotPro-gkxvezvuegigiucnfxoksbodghwm/Build/Products/Debug-iphoneos/HanekeSwift/Haneke.framework"; sourceTree = "<group>"; };
+		B94689751D2F98B0001676D9 /* UnavailableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnavailableView.swift; sourceTree = "<group>"; };
+		B94845891D2B51B7000C534F /* SelectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectViewController.swift; sourceTree = "<group>"; };
+		B948458C1D2B547D000C534F /* UINavigationController+WXSTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+WXSTransition.h"; sourceTree = "<group>"; };
+		B948458D1D2B547D000C534F /* UINavigationController+WXSTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+WXSTransition.m"; sourceTree = "<group>"; };
+		B948458E1D2B547D000C534F /* UIViewController+WXSTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+WXSTransition.h"; sourceTree = "<group>"; };
+		B948458F1D2B547D000C534F /* UIViewController+WXSTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+WXSTransition.m"; sourceTree = "<group>"; };
+		B94845901D2B547D000C534F /* WXSTransitionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXSTransitionManager.h; sourceTree = "<group>"; };
+		B94845911D2B547D000C534F /* WXSTransitionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXSTransitionManager.m; sourceTree = "<group>"; };
+		B94845921D2B547D000C534F /* WXSTypedefConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXSTypedefConfig.h; sourceTree = "<group>"; };
+		B94845961D2B56C8000C534F /* mRobotPro-Bridge-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "mRobotPro-Bridge-Header.h"; sourceTree = "<group>"; };
+		B948459D1D2BBEFA000C534F /* AlertUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertUtil.swift; sourceTree = "<group>"; };
+		B964E9371D2A087B00DC6331 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		B9D51DFC1D3376E7004C3CA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B9D51DFE1D33771E004C3CA2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B9D51DFF1D33772B004C3CA2 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		B9D51E001D33772B004C3CA2 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		B9D51E011D33772B004C3CA2 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		B9D51E021D337D46004C3CA2 /* Localize_Swift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Localize_Swift.framework; path = "Pods/../build/Debug-iphoneos/Localize-Swift/Localize_Swift.framework"; sourceTree = "<group>"; };
+		B9E8A9FD1D2E2ED000AE0566 /* ISScrollViewPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ISScrollViewPage.swift; sourceTree = "<group>"; };
+		B9E8A9FF1D2E304B00AE0566 /* TankSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TankSettingViewController.swift; sourceTree = "<group>"; };
+		FF0B335006EA91054C5B8717 /* Pods-mRobotPro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mRobotPro.release.xcconfig"; path = "Pods/Target Support Files/Pods-mRobotPro/Pods-mRobotPro.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B9277B3D1D26467600EB9A11 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B94689741D2E6FBB001676D9 /* Haneke.framework in Frameworks */,
+				7E9BABC1E85ABF70E59DD3B2 /* Pods_mRobotPro.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9277B511D26467600EB9A11 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9277B5C1D26467600EB9A11 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		681C5B01527D557DC99E7487 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B9D51E021D337D46004C3CA2 /* Localize_Swift.framework */,
+				B94689731D2E6FBB001676D9 /* Haneke.framework */,
+				027515959255C68D001B47E2 /* Pods_mRobotPro.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B5F21B8E660900AC39CB357B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				968CBD2C6EE307AB68A0C3CA /* Pods-mRobotPro.debug.xcconfig */,
+				FF0B335006EA91054C5B8717 /* Pods-mRobotPro.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B9190AF71D2A01EA0079F404 /* mBLE */ = {
+			isa = PBXGroup;
+			children = (
+				B9190AF81D2A01FB0079F404 /* CBCharacteristic+LightBlue.swift */,
+				B9190AF91D2A01FB0079F404 /* CBService+LightBlue.swift */,
+				B9190AFA1D2A01FB0079F404 /* CBUUID+LightBlue.swift */,
+				B9190AFB1D2A01FB0079F404 /* BluetoothManager.swift */,
+				B9190AFC1D2A01FB0079F404 /* BluetoothDelegate.swift */,
+				B9190AFD1D2A01FB0079F404 /* CBAdvertisementData+LightBlue.swift */,
+				B9190AFE1D2A01FB0079F404 /* Constants.swift */,
+			);
+			name = mBLE;
+			sourceTree = "<group>";
+		};
+		B9277B371D26467600EB9A11 = {
+			isa = PBXGroup;
+			children = (
+				B9190AF51D2661B20079F404 /* MyPlayground.playground */,
+				B9277B421D26467600EB9A11 /* mRobotPro */,
+				B9277B571D26467600EB9A11 /* mRobotProTests */,
+				B9277B621D26467600EB9A11 /* mRobotProUITests */,
+				B9277B411D26467600EB9A11 /* Products */,
+				B5F21B8E660900AC39CB357B /* Pods */,
+				681C5B01527D557DC99E7487 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B9277B411D26467600EB9A11 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B9277B401D26467600EB9A11 /* mRobotPro.app */,
+				B9277B541D26467600EB9A11 /* mRobotProTests.xctest */,
+				B9277B5F1D26467600EB9A11 /* mRobotProUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B9277B421D26467600EB9A11 /* mRobotPro */ = {
+			isa = PBXGroup;
+			children = (
+				B9EF0A0E1D334A3600807587 /* Setting */,
+				B9EF0A0D1D334A1B00807587 /* Config */,
+				B9190AF71D2A01EA0079F404 /* mBLE */,
+				B9277B711D26467F00EB9A11 /* mUIKit */,
+				B9EF0A0F1D334A5400807587 /* Controllor */,
+				B9277B471D26467600EB9A11 /* Main.storyboard */,
+				B9277B4A1D26467600EB9A11 /* Assets.xcassets */,
+				B9277B4C1D26467600EB9A11 /* LaunchScreen.storyboard */,
+				B9277B4F1D26467600EB9A11 /* Info.plist */,
+				B9D51DFD1D3376E7004C3CA2 /* Localizable.strings */,
+				B94845961D2B56C8000C534F /* mRobotPro-Bridge-Header.h */,
+			);
+			path = mRobotPro;
+			sourceTree = "<group>";
+		};
+		B9277B571D26467600EB9A11 /* mRobotProTests */ = {
+			isa = PBXGroup;
+			children = (
+				B9277B581D26467600EB9A11 /* mRobotProTests.swift */,
+				B9277B5A1D26467600EB9A11 /* Info.plist */,
+			);
+			path = mRobotProTests;
+			sourceTree = "<group>";
+		};
+		B9277B621D26467600EB9A11 /* mRobotProUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B9277B631D26467600EB9A11 /* mRobotProUITests.swift */,
+				B9277B651D26467600EB9A11 /* Info.plist */,
+			);
+			path = mRobotProUITests;
+			sourceTree = "<group>";
+		};
+		B9277B711D26467F00EB9A11 /* mUIKit */ = {
+			isa = PBXGroup;
+			children = (
+				B948458B1D2B547D000C534F /* WXSTransition */,
+				B9277B721D26469D00EB9A11 /* mJoyStick.swift */,
+				B9277B761D26562C00EB9A11 /* mAlertController.swift */,
+				B9E8A9FD1D2E2ED000AE0566 /* ISScrollViewPage.swift */,
+				B9190B061D2A04550079F404 /* ConnectingView.swift */,
+				B94689751D2F98B0001676D9 /* UnavailableView.swift */,
+				B948459D1D2BBEFA000C534F /* AlertUtil.swift */,
+			);
+			name = mUIKit;
+			sourceTree = "<group>";
+		};
+		B948458B1D2B547D000C534F /* WXSTransition */ = {
+			isa = PBXGroup;
+			children = (
+				B948458C1D2B547D000C534F /* UINavigationController+WXSTransition.h */,
+				B948458D1D2B547D000C534F /* UINavigationController+WXSTransition.m */,
+				B948458E1D2B547D000C534F /* UIViewController+WXSTransition.h */,
+				B948458F1D2B547D000C534F /* UIViewController+WXSTransition.m */,
+				B94845901D2B547D000C534F /* WXSTransitionManager.h */,
+				B94845911D2B547D000C534F /* WXSTransitionManager.m */,
+				B94845921D2B547D000C534F /* WXSTypedefConfig.h */,
+			);
+			path = WXSTransition;
+			sourceTree = "<group>";
+		};
+		B9EF0A0D1D334A1B00807587 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				B94845891D2B51B7000C534F /* SelectViewController.swift */,
+				B9277B7A1D2657D700EB9A11 /* AppConfig.swift */,
+				B9277B431D26467600EB9A11 /* AppDelegate.swift */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
+		B9EF0A0E1D334A3600807587 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				B964E9371D2A087B00DC6331 /* SettingViewController.swift */,
+				B9E8A9FF1D2E304B00AE0566 /* TankSettingViewController.swift */,
+				B90756891D2E379E0040AA46 /* DroneSettingViewController.swift */,
+			);
+			name = Setting;
+			sourceTree = "<group>";
+		};
+		B9EF0A0F1D334A5400807587 /* Controllor */ = {
+			isa = PBXGroup;
+			children = (
+				B9277B781D26577B00EB9A11 /* mTankViewController.swift */,
+				B9277B7C1D2659EA00EB9A11 /* mDroneViewController.swift */,
+			);
+			name = Controllor;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B9277B3F1D26467600EB9A11 /* mRobotPro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9277B681D26467600EB9A11 /* Build configuration list for PBXNativeTarget "mRobotPro" */;
+			buildPhases = (
+				0A69EC72168E11D4D333E66D /* [CP] Check Pods Manifest.lock */,
+				B9277B3C1D26467600EB9A11 /* Sources */,
+				B9277B3D1D26467600EB9A11 /* Frameworks */,
+				B9277B3E1D26467600EB9A11 /* Resources */,
+				B466212B4FAB95BB1C487019 /* [CP] Embed Pods Frameworks */,
+				FDE8899DD54D2F874817B0C7 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = mRobotPro;
+			productName = mRobotPro;
+			productReference = B9277B401D26467600EB9A11 /* mRobotPro.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B9277B531D26467600EB9A11 /* mRobotProTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9277B6B1D26467600EB9A11 /* Build configuration list for PBXNativeTarget "mRobotProTests" */;
+			buildPhases = (
+				B9277B501D26467600EB9A11 /* Sources */,
+				B9277B511D26467600EB9A11 /* Frameworks */,
+				B9277B521D26467600EB9A11 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B9277B561D26467600EB9A11 /* PBXTargetDependency */,
+			);
+			name = mRobotProTests;
+			productName = mRobotProTests;
+			productReference = B9277B541D26467600EB9A11 /* mRobotProTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B9277B5E1D26467600EB9A11 /* mRobotProUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9277B6E1D26467600EB9A11 /* Build configuration list for PBXNativeTarget "mRobotProUITests" */;
+			buildPhases = (
+				B9277B5B1D26467600EB9A11 /* Sources */,
+				B9277B5C1D26467600EB9A11 /* Frameworks */,
+				B9277B5D1D26467600EB9A11 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B9277B611D26467600EB9A11 /* PBXTargetDependency */,
+			);
+			name = mRobotProUITests;
+			productName = mRobotProUITests;
+			productReference = B9277B5F1D26467600EB9A11 /* mRobotProUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B9277B381D26467600EB9A11 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = harvey;
+				TargetAttributes = {
+					B9277B3F1D26467600EB9A11 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					B9277B531D26467600EB9A11 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = B9277B3F1D26467600EB9A11;
+					};
+					B9277B5E1D26467600EB9A11 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = B9277B3F1D26467600EB9A11;
+					};
+				};
+			};
+			buildConfigurationList = B9277B3B1D26467600EB9A11 /* Build configuration list for PBXProject "mRobotPro" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = B9277B371D26467600EB9A11;
+			productRefGroup = B9277B411D26467600EB9A11 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B9277B3F1D26467600EB9A11 /* mRobotPro */,
+				B9277B531D26467600EB9A11 /* mRobotProTests */,
+				B9277B5E1D26467600EB9A11 /* mRobotProUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B9277B3E1D26467600EB9A11 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9277B4E1D26467600EB9A11 /* LaunchScreen.storyboard in Resources */,
+				B9D51DFB1D3376E7004C3CA2 /* Localizable.strings in Resources */,
+				B9277B4B1D26467600EB9A11 /* Assets.xcassets in Resources */,
+				B9277B491D26467600EB9A11 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9277B521D26467600EB9A11 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9277B5D1D26467600EB9A11 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A69EC72168E11D4D333E66D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B466212B4FAB95BB1C487019 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mRobotPro/Pods-mRobotPro-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FDE8899DD54D2F874817B0C7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mRobotPro/Pods-mRobotPro-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B9277B3C1D26467600EB9A11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B948459E1D2BBEFA000C534F /* AlertUtil.swift in Sources */,
+				B9277B7D1D2659EA00EB9A11 /* mDroneViewController.swift in Sources */,
+				B9190B071D2A04550079F404 /* ConnectingView.swift in Sources */,
+				B94845931D2B547D000C534F /* UINavigationController+WXSTransition.m in Sources */,
+				B9E8A9FE1D2E2ED000AE0566 /* ISScrollViewPage.swift in Sources */,
+				B9277B771D26562C00EB9A11 /* mAlertController.swift in Sources */,
+				B9190B001D2A01FB0079F404 /* CBService+LightBlue.swift in Sources */,
+				B94689761D2F98B0001676D9 /* UnavailableView.swift in Sources */,
+				B964E9381D2A087B00DC6331 /* SettingViewController.swift in Sources */,
+				B907568A1D2E379E0040AA46 /* DroneSettingViewController.swift in Sources */,
+				B9190B011D2A01FB0079F404 /* CBUUID+LightBlue.swift in Sources */,
+				B9190B051D2A01FB0079F404 /* Constants.swift in Sources */,
+				B9190B031D2A01FB0079F404 /* BluetoothDelegate.swift in Sources */,
+				B9190B041D2A01FB0079F404 /* CBAdvertisementData+LightBlue.swift in Sources */,
+				B9277B7B1D2657D700EB9A11 /* AppConfig.swift in Sources */,
+				B9277B441D26467600EB9A11 /* AppDelegate.swift in Sources */,
+				B9277B791D26577B00EB9A11 /* mTankViewController.swift in Sources */,
+				B94845951D2B547D000C534F /* WXSTransitionManager.m in Sources */,
+				B9277B731D26469D00EB9A11 /* mJoyStick.swift in Sources */,
+				B94845941D2B547D000C534F /* UIViewController+WXSTransition.m in Sources */,
+				B9E8AA001D2E304B00AE0566 /* TankSettingViewController.swift in Sources */,
+				B9190B021D2A01FB0079F404 /* BluetoothManager.swift in Sources */,
+				B948458A1D2B51B7000C534F /* SelectViewController.swift in Sources */,
+				B9190AFF1D2A01FB0079F404 /* CBCharacteristic+LightBlue.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9277B501D26467600EB9A11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9277B591D26467600EB9A11 /* mRobotProTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9277B5B1D26467600EB9A11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9277B641D26467600EB9A11 /* mRobotProUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B9277B561D26467600EB9A11 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B9277B3F1D26467600EB9A11 /* mRobotPro */;
+			targetProxy = B9277B551D26467600EB9A11 /* PBXContainerItemProxy */;
+		};
+		B9277B611D26467600EB9A11 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B9277B3F1D26467600EB9A11 /* mRobotPro */;
+			targetProxy = B9277B601D26467600EB9A11 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B9277B471D26467600EB9A11 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B9277B481D26467600EB9A11 /* Base */,
+				B9D51DFF1D33772B004C3CA2 /* zh-Hans */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B9277B4C1D26467600EB9A11 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B9277B4D1D26467600EB9A11 /* Base */,
+				B9D51E001D33772B004C3CA2 /* zh-Hans */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B9D51DFD1D3376E7004C3CA2 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B9D51DFC1D3376E7004C3CA2 /* Base */,
+				B9D51DFE1D33771E004C3CA2 /* en */,
+				B9D51E011D33772B004C3CA2 /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B9277B661D26467600EB9A11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B9277B671D26467600EB9A11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B9277B691D26467600EB9A11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 968CBD2C6EE307AB68A0C3CA /* Pods-mRobotPro.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Localize-Swift",
+				);
+				INFOPLIST_FILE = mRobotPro/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.microduino.mRobotPro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "mRobotPro/mRobotPro-Bridge-Header.h";
+			};
+			name = Debug;
+		};
+		B9277B6A1D26467600EB9A11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF0B335006EA91054C5B8717 /* Pods-mRobotPro.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Localize-Swift",
+				);
+				INFOPLIST_FILE = mRobotPro/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.microduino.mRobotPro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "mRobotPro/mRobotPro-Bridge-Header.h";
+			};
+			name = Release;
+		};
+		B9277B6C1D26467600EB9A11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = mRobotProTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.microduino.mRobotProTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mRobotPro.app/mRobotPro";
+			};
+			name = Debug;
+		};
+		B9277B6D1D26467600EB9A11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = mRobotProTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.microduino.mRobotProTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mRobotPro.app/mRobotPro";
+			};
+			name = Release;
+		};
+		B9277B6F1D26467600EB9A11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = mRobotProUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.microduino.mRobotProUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = mRobotPro;
+			};
+			name = Debug;
+		};
+		B9277B701D26467600EB9A11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = mRobotProUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.microduino.mRobotProUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = mRobotPro;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B9277B3B1D26467600EB9A11 /* Build configuration list for PBXProject "mRobotPro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9277B661D26467600EB9A11 /* Debug */,
+				B9277B671D26467600EB9A11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9277B681D26467600EB9A11 /* Build configuration list for PBXNativeTarget "mRobotPro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9277B691D26467600EB9A11 /* Debug */,
+				B9277B6A1D26467600EB9A11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9277B6B1D26467600EB9A11 /* Build configuration list for PBXNativeTarget "mRobotProTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9277B6C1D26467600EB9A11 /* Debug */,
+				B9277B6D1D26467600EB9A11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9277B6E1D26467600EB9A11 /* Build configuration list for PBXNativeTarget "mRobotProUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9277B6F1D26467600EB9A11 /* Debug */,
+				B9277B701D26467600EB9A11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B9277B381D26467600EB9A11 /* Project object */;
+}

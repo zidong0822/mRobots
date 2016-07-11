@@ -1,0 +1,40 @@
+/* 
+  Localizable.strings
+  mRobotPro
+
+  Created by harvey on 16/7/11.
+  Copyright © 2016年 harvey. All rights reserved.
+*/
+
+"Bluetooth connection is broken" = "Bluetooth connection is broken";
+
+"reconnect" = "reconnect";
+
+"The device is connected , make sure it is switched" = "The device is connected , make sure it is switched";
+
+"Cancel" = "Cancel";
+
+"Confirm" = "Confirm";
+
+"Reset" = "Reset";
+
+"Operation" = "Operation";
+
+"Information" = "Information";
+
+"Name" = "Name";
+
+"ID" = "ID";
+
+"American" = "American";
+
+"Japan" = "Japan";
+
+"Left" = "Left";
+
+"Right" = "Right";
+
+"mRobots requires Bluetooth" = "mRobots requires Bluetooth";
+
+"Please enable Bluetooth to continue using this app" = "Please enable Bluetooth to continue using this app";
+
